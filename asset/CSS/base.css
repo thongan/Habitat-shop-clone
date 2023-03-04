@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #103a3a;
+    --hover-color: #c25b41;
+    --white-color: #fff;
+    --black-color: #000;
+    --border-color: #eeeeee;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.15rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+}
+
+form {
+    margin: 0;
+}
+
+/* Responsive */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%
+}
+
+.grid__row {
+    display: flex;
+    max-width: 1360px;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.grid__column-4 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 35%;
+}

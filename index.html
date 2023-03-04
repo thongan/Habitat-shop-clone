@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/CSS/base.css"/>
+    <link rel="stylesheet" href="./asset/CSS/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Website bán hàng</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header section -->
+        <div id="start">
+            <div class="announce-bar-section">
+                <div class="announce-bar">
+                    <div class="announce">
+                        <div class="announce--inner">
+                            <div></div>
+                            <div class="announce--text">
+                               <p>FREE SHIPPING ON ALL ORDERS OVER 50$</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-section">
+                <div id="header" class="header-sticky">
+                        <div class="grid">
+                            <header class="header">
+                                <a href="/" class="header__logo">
+                                        <img src="/asset/img/logo2x_cd201b14-28a7-4705-a566-06dcc9fd008a.png" alt="" class="header__logo-img">
+                                </a>
+                                <nav class="header__menu">
+                                    <ul class="header__menu--list">
+                                        <li class="header__menu-item">
+                                            <a href="" class="header__menu-link">Home</a>
+                                        </li>
+                                        <li class="header__menu-item header__menu-children header__menu-mega" data-item-title="Shop">
+                                            <a href="" class="header__menu-link">Shop</a>
+                                            <div class="header__sub-menu">
+                                                <ul class="header__mega-menu">
+                                                    <li class="">
+                                                        <a href="">Furniture</a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/">Beds & Mattresses</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/">Tables</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/">Bookcases & Storage</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/">Office Chairs</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/">Wardrobes & Chests</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">Outdoor</a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="/">Tables</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/">Chairs</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="/">Outdoor Lighting</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">Lighting</a>
+                                                        <ul>
+                                                            <li><a href="/">Ceiling Lights</a></li>
+                                                            <li><a href="/">Floor Lamps</a></li>
+                                                            <li><a href="/">Table & Desk Lamps</a></li>
+                                                            <li><a href="/">Wall Lights</a></li>
+                                                            <li><a href="/">Lamp Shades</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="">Sofas & Armchairse</a>
+                                                        <ul>
+                                                            <li><a href="/">Footstools & Pouffes</a></li>
+                                                            <li><a href="/">Armchairs</a></li>
+                                                            <li><a href="/">Corner Sofas & Chaise</a></li>
+                                                            <li><a href="/">Sofas</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a href="" class="header__menu-link">Blog</a>
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a href="" class="header__menu-link">About</a>
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a href="" class="header__menu-link">Contact</a>
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a href="" class="header__menu-link">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="header__second-area">
+                                    <a href="#" class="header__second-link" id="quick-search">
+                                        <i class="header__second-icon fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                    <a href="#" class="header__second-link">
+                                        <i class="header__second-icon fa-solid fa-user"></i>
+                                    </a>
+                                    <a href="#" class="header__second-link header__second-cart">
+                                        <div class="header__second-link-icon">
+                                            <i class="header__second-icon fa-solid fa-cart-shopping"></i>
+                                            <span class="header__item-count">0</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </header>
+                        </div>
+                </div>
+                <div class="header__quick-search">
+                        <div class="header__quick-search--form">
+                            <form action="/search" class="searchform">
+                                <fieldset>
+                                    <input type="search" class="search-field" placeholder="Search for anything">
+                                    <div class="header__search-close">
+                                        <svg width="14px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="header__quick-search--result-container"></div>
+                        <!-- <div class="header__quick-search--popular">
+                            <span class="header__quick-search--label">POPULAR SEARCHES</span>
+                            <scroll-shadow>
+                                <style>
+                                    :host{
+                                        display: inline-block;
+                                        position: relative;
+                                    }
+                                    :host([hidden]){
+                                        display: none;
+                                    }
+                                    s {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        z-index: 5;
+                                        pointer-events: none;
+                                        background-repeat: no-repeat;
+                                    }
+                                </style>
+                                <slot>
+                                    <div class="header__popular-history-tag"></div>
+                                </slot>
+                                <s style="top: 0px; left:0px; right: 0px; bottom: 0px;"></s>
+                                <div class="header__popular-history-tag">
+                                    <button><a href="#" class="button outline pill small">Our story</a></button>
+                                    <button><a href="#" class="button outline pill small">Careers</a></button>
+                                    <button><a href="#" class="button outline pill small">Press</a></button>
+                                    <button><a href="#" class="button outline pill small">FAQ</a></button>
+                                    <button><a href="#" class="button outline pill small">Find a store</a></button>
+                                </div>
+                            </scroll-shadow>
+                        </div> -->
+                    </div>
+            </div>
+        </div>
+        <!-- End of header section -->
+        
+        <!-- Begin of main section -->
+        <div id="main-content" role="main">
+            <!-- Slide chạy ảnh -->
+            <div class="slidershow">
+                <div class="slideshow__inner">
+                    <div class="slide active fade">
+                        <img src="/asset/img/slide1.jpg" alt="" class="slide-img">
+                        <div class="slideshow__slide-inner content-bottom-left">
+                            <div class="slideshow__slide-content">
+                                <p class="sub-heading">make your home stylist</p>
+                                <h1 class="split-text">
+                                    <div class="line-child">
+                                        <div class="line-child-child">Every</div>
+                                        <div class="line-child-child">Design</div>
+                                        <div class="line-child-child">Has</div>
+                                        <div class="line-child-child">A</div>
+                                    </div>
+                                    <div class="line-child">
+                                        <div class="line-child-child">Story</div>
+                                    </div>
+                                </h1>
+                                <div class="slideshow__button-container">
+                                    <a href="#" class="button accent2">Shop Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="/asset/img/slide2.jpg" alt="" class="slide-img">
+                        <div class="slideshow__slide-inner content-bottom-left">
+                            <div class="slideshow__slide-content">
+                                <p class="sub-heading">for your dream home</p>
+                                <h1 class="split-text">
+                                    <div class="line-child">
+                                        <div class="line-child-child">Make</div>
+                                        <div class="line-child-child">A</div>
+                                        <div class="line-child-child">Room</div>
+                                    </div>
+                                    <div class="line-child">
+                                        <div class="line-child-child">Comfortable</div>
+                                    </div>
+                                </h1>
+                                <div class="slideshow__button-container">
+                                    <a href="#" class="button accent2">Shop Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="/asset/img/slide3.jpg" alt="" class="slide-img">
+                        <div class="slideshow__slide-inner content-bottom-left">
+                            <div class="slideshow__slide-content">
+                                <p class="sub-heading">you want it, we build it</p>
+                                <h1 class="split-text">
+                                    <div class="line-child">
+                                        <div class="line-child-child">We</div>
+                                        <div class="line-child-child">Serve</div>
+                                        <div class="line-child-child">You</div>
+                                    </div>
+                                    <div class="line-child">
+                                        <div class="line-child-child">Dream</div>
+                                        <div class="line-child-child">Furniture</div>
+                                    </div>
+                                </h1>
+                                <div class="slideshow__button-container">
+                                    <a href="#" class="button accent2">Shop Now</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow__dot">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Text chạy ngang -->
+            <div class="scrolling-text-inner">
+                <div>
+                    <div class="scrolling-text-item">Design for everyday living.</div>
+                    <div class="scrolling-text-item">Free shipping on US orders $40+.</div>
+                    <div class="scrolling-text-item">Decorate your home with wood touch.</div>
+                    <div class="scrolling-text-item">Design for everyday living.</div>
+                    <div class="scrolling-text-item">Free shipping on US orders $40+.</div>
+                </div>
+                <div>
+                    <div class="scrolling-text-item">Design for everyday living.</div>
+                    <div class="scrolling-text-item">Free shipping on US orders $40+.</div>
+                    <div class="scrolling-text-item">Decorate your home with wood touch.</div>
+                    <div class="scrolling-text-item">Design for everyday living.</div>
+                    <div class="scrolling-text-item">Free shipping on US orders $40+.</div>
+                </div>
+            </div>
+            <!-- List category -->
+            <div class="list-section">
+                <div class="list-collection-slider section-spacing">
+                    <div class="section-header">
+                        <h1 class="section-heading">Shop By Category</h1>
+                        <div class="rte">
+                            <p class="section-sub-heading">Shop by room to find the furniture that you are looking for.</p>
+                        </div>
+                    </div>
+                    <div class="row list-btns">
+                        <div class="small-12 columns ">
+                            <div class="card-grid">
+                                <div class="card-slider style1 columns" data-id="1">
+                                    <div class="card-slider__inner">
+                                        <a href="#" class="card-slider__link">
+                                            <div class="card-slider__img">
+                                                <img src="/asset/img/office.jpg" alt="" class="">
+                                            </div>
+                                            <div class="card-slider__content">
+                                                <div>
+                                                    <h2>Office</h2>
+                                                    <p>Create a stylist and functional workspace with high-quality office furniture. Explore an unmatched selection of office furniture.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-slider style1 columns" data-id="2">
+                                    <div class="card-slider__inner">
+                                        <a href="#" class="card-slider__link">
+                                            <div class="card-slider__img">
+                                                <img src="/asset/img/diningroom.jpg" alt="Dining Room" class="">
+                                            </div>
+                                            <div class="card-slider__content">
+                                                <div>
+                                                    <h2>Dining Room</h2>
+                                                    <p>Our collection focus on style, versatility, and comfort for every day or event party.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                 <div class="card-slider style1 columns" data-id="3">
+                                    <div class="card-slider__inner">
+                                        <a href="#" class="card-slider__link">
+                                            <div class="card-slider__img">
+                                                <img src="/asset/img/minimal.jpg" alt="Minimalist" class="">
+                                            </div>
+                                            <div class="card-slider__content">
+                                                <div>
+                                                    <h2>Minimalist</h2>
+                                                    <p>Our collection focus on style, versatility, and comfort for every day or event party.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-btns">
+                            <button id="btn-prev">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button id="btn-next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Label logo -->
+            <div class="list-section">
+                <div class="logo-list">
+                    <div class="logo-list__inner">
+                        <div class="logo-list__logo">
+                            <img  class="lazyloaded"src="/asset/img/logo1.jpg" alt="Jardan">
+                        </div>
+                        <div class="logo-list__logo">
+                            <img  class="lazyloaded"src="/asset/img/logo2.jpg" alt="Vitra">
+                        </div>
+                        <div class="logo-list__logo">
+                            <img  class="lazyloaded"src="/asset/img/logo3.jpg" alt="Allermuir">
+                        </div>
+                        <div class="logo-list__logo">
+                            <img  class="lazyloaded"src="/asset/img/logo4.jpg" alt="MOROSO">
+                        </div>
+                        <div class="logo-list__logo">
+                            <img  class="lazyloaded"src="/asset/img/logo5.jpg" alt="Forty Winks">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- <div class="list-section collection-tab">
+                <div class="list-collection-slider section-spacing">
+                    <div class="section-header">
+                        <h1 class="section-heading">Shop New Arrivals</h1>
+                        <div class="rte">
+                            <p class="section-sub-heading">New arrivals coming in regularly, find the freshest modern styles here.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>  -->
+            <!-- Sản phẩm đặc trưng -->
+            <div class="list-section">
+                <div class="list-collection-slider section-spacing">
+                    <div class="section-header">
+                        <h1 class="section-heading">Featured product</h1>
+                        <div class="rte">
+                            <p class="section-sub-heading">Most popular furniture piece with great affordable price</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <div class="product-card__container">
+                                <div class="mini-thumb">
+                                    <div class="product-img__select">
+                                        <div class="product-img active">
+                                           <a href="#" data-id="1"><img src="/asset/img/s-image1.png"></a>
+                                       </div>
+                                       <div class="product-img">
+                                           <a href="#" data-id="2"><img src="/asset/img/s-image2.png"></a>
+                                       </div>
+                                       <div class="product-img">
+                                           <a href="#" data-id="3"><img src="/asset/img/s-image3.png"></a>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="product-card-left">
+                                    <div class="product-img__main">
+                                            <img src="/asset/img/image1.png">
+                                            <img src="/asset/img/image2.png"> 
+                                            <img src="/asset/img/image3.png">     
+                                        </div>
+                                </div>
+                                <div class="product-card-right">
+                                    <div class="card-top">
+                                            <h2><a href="#">Cresent Leather Lounge Chair</a></h2>
+                                        <div class="product-price">
+                                            <h2>$493.50</h2>
+                                            <p>Tax included. <a href="#">Shipping</a> caculated at checkout</p>
+                                        </div>
+                                        <div class="product-ratings">
+                                            <div class="stars">
+                                                <div class="stars-group">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="reviews">
+                                                <a href="#">
+                                                    <span>1 review</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="conditions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quis nihil? Atque nihil quisquam repellendus voluptates ad maiores, omnis a in corrupti, ex fuga suscipit commodi non modi magnam ut.</p>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="form">
+                                            <div class="form-group">
+                                            <label for="#">Color</label>
+                                            <select name="" id="">
+                                                <option>
+                                                    Saddle Brown
+                                                </option>
+                                                <option>
+                                                    Steel Blue
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="#">Size</label>
+                                            <select name="" id="">
+                                                <option>
+                                                    S
+                                                </option>
+                                                <option>
+                                                    M
+                                                </option>
+                                                <option>
+                                                    L
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="">Quantity</label>
+                                                <div class="input-group">
+                                                    <button class="minus">
+                                                        <i class="fa-solid fa-minus"></i>
+                                                    </button>
+                                                    <input type="text" value="1" id="qty">
+                                                    <button class="plus">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                                <button class="add-cart">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    
+    
+            </div>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>

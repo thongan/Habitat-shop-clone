@@ -1,0 +1,81 @@
+@import 'colors';
+.card-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.card-slider{
+    &__link{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition-property: color;
+    }
+}
+.card-slider__img{
+    position: relative;
+    width: 394px;
+    height: 394px;
+    margin-bottom: 25px;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+}
+
+.card-slider.style1 {
+    h2 {
+        font-size: 1.8785rem;
+        line-height: 1;
+        font-weight: 400;
+        padding-bottom: 5px;
+        color: $primary;
+    }
+    .card-slider__content{
+        p {
+            margin-top: 5px;
+        }
+    }
+}
+.card-slider__content{
+    width: 394px;
+    h2 {
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        line-height: 1.7;
+        color: $primary;
+        font-weight: 500;
+        
+    }
+}
+.list-btns{
+    position: relative;
+    .card-btns {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        min-width: 1300px;
+        justify-content: space-between;
+        transform: translateY(-100%);
+        button {
+            font-size: 3rem;
+            color: $primary;
+            border: 0;
+            cursor: pointer;
+            background-color: transparent;
+            &:hover {
+                color: $hover;
+                transition:all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+        }
+    }
+}
+// Product list

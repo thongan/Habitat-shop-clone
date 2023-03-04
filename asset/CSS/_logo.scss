@@ -1,0 +1,24 @@
+@import 'colors';
+.logo-list {
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+.logo-list__inner {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 200px));
+}
+.logo-list__logo{
+    text-align: center;
+    pointer-events: all;
+    transition: all .25s cubic-bezier(.104,.204,.492,1);
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        height: 100%;
+        object-position: 50% 50%;
+
+
+    }
+}

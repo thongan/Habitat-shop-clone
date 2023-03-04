@@ -1,0 +1,126 @@
+@import 'colors';
+// Search box
+input[type=search]{
+    height:52px;
+    font-weight: 400;
+    background: transparent;
+    max-width: 100%;
+    border-radius:3px;
+    appearance: none;
+}
+
+.header-section {
+    position: sticky; 
+    top: 0;
+    left: 0;
+    z-index: 50;
+    &.search-open{
+        .header__quick-search{
+            transform: translateY(0);
+            box-shadow: 0 10px 15px #0000001a;
+            visibility: visible;
+            transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+        }
+    }
+}
+
+.header__quick-search--form{
+    visibility: visible;
+}
+
+
+
+
+.header__quick-search{
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background: #fff;
+    transform: translateY(-100px);
+    transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+
+    &--form{
+        padding: 20px 40px;
+        border-top: 1px solid $border;
+    }
+    // Typing to search show up
+
+    // Popular search
+
+    &--popular{
+        padding: 20px 40px; 
+        border-top: 1px solid $border;
+        white-space: nowrap;
+        overflow: scroll;
+    }  
+        
+    &--label{
+        display: block;
+        font-size: 1.2675rem;
+        line-height: 1.3;
+        letter-spacing: 0.2em;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-right: 25px;
+        color: $primary;
+
+    }
+
+    .searchform{
+        fieldset{
+            input{
+                font-size: 34px;
+                padding: 0 40px 0 0;
+                border: 0;
+                outline: 0;
+                color: $primary;
+            }
+        }
+    }
+}
+.searchform{
+    fieldset{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        input{
+            width: 100%;
+            margin: 0;
+        }
+        .header__search-close{
+            position: absolute;
+            display: flex;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            align-items:center;
+            justify-content: flex-end;
+            width: 40px;
+            cursor: pointer;
+        }
+    }
+}
+
+.header__popular-history-tag {
+    > button {
+        border: 1px solid $primary ;
+        border-radius: 500px;
+        padding: 8px 10px;
+        margin-right: 6px;
+        background: $white;
+        &:hover {
+            background-color: $hover;
+            transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+        }
+    }
+        a {
+            padding: 0 10px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: $primary;
+            
+        }
+}
