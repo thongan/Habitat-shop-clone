@@ -144,3 +144,43 @@ function plusQty(){
     qtyTxt.value = qty
 }
 
+// Định nghĩa element scroll-shadow cho web.
+class myScroll extends HTMLElement {
+    constructor(){
+        super();
+        const shadow = this.attachShadow({mode:'open'});
+        let style = document.createElement('style'); 
+        let s = document.createElement('s');
+        s.setAttribute("style", "top:0px; left:0px; right: 0px; bottom:0px;")
+        style.textContent = `
+            :host {
+                display: inline-block;
+                position: relative;
+            }
+            :host([hidden]){
+                display: none;
+            }
+            s {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                    z-index: 5;
+                pointer-events: none;
+                background:
+                var(--scroll-shadow-top, radial-gradient(farthest-side at 50% 0%, rgba(0,0,0,.2), rgba(0,0,0,0))) top/100% var(--top),
+                var(--scroll-shadow-bottom, radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0))) bottom/100% var(--bottom),
+                var(--scroll-shadow-left, radial-gradient(farthest-side at 0%, rgba(0,0,0,.2), rgba(0,0,0,0))) left/var(--left) 100%,
+                var(--scroll-shadow-right, radial-gradient(farthest-side at 100%, rgba(0,0,0,.2), rgba(0,0,0,0))) right/var(--right) 100%;
+                background-repeat: no-repeat;
+            }    
+  
+        `
+        let slot = document.createElement('slot');
+        shadow.appendChild(style);
+        shadow.appendChild(slot);
+        shadow.appendChild(s);
+    }
+}
+customElements.define("scroll-shadow", myScroll);

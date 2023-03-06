@@ -297,6 +297,55 @@ input[type=search] {
   left: 0;
   z-index: 50;
 }
+.header-section.search-open .header__quick-search--form {
+  visibility: visible;
+  padding: 20px 40px;
+  border-top: 1px solid #eee;
+}
+.header-section.search-open .header__quick-search--popular {
+  visibility: visible;
+  padding: 20px 40px;
+  border-top: 1px solid #eee;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.header-section.search-open .header__quick-search--popular scroll-shadow {
+  width: calc(100% + 80px);
+  margin: 0 -40px;
+}
+.header-section.search-open .header__quick-search--popular scroll-shadow div {
+  padding: 0 40px;
+}
+.header-section.search-open .header__quick-search--popular .button {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.header-section.search-open .header__quick-search--popular .button.outline {
+  margin-right: 5px;
+  display: inline-flex;
+  border: 1px solid #103a3a;
+  color: #103a3a;
+}
+.header-section.search-open .header__quick-search--popular .button.outline:hover {
+  background-color: #103a3a;
+  color: #fff;
+  transition: color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1), background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+}
+.header-section.search-open .header__quick-search--popular .button.small {
+  height: 28px;
+  padding: 5px 20px;
+  font-weight: 500;
+  text-transform: none;
+  font-size: 1.4rem;
+}
+.header-section.search-open .header__quick-search--popular .button.pill {
+  border-radius: 500px;
+}
 .header-section.search-open .header__quick-search {
   transform: translateY(0);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1019607843);
@@ -305,7 +354,7 @@ input[type=search] {
 }
 
 .header__quick-search--form {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .header__quick-search {
@@ -318,15 +367,8 @@ input[type=search] {
   transform: translateY(-100px);
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
 }
-.header__quick-search--form {
-  padding: 20px 40px;
-  border-top: 1px solid #eee;
-}
 .header__quick-search--popular {
-  padding: 20px 40px;
-  border-top: 1px solid #eee;
-  white-space: nowrap;
-  overflow: scroll;
+  visibility: hidden;
 }
 .header__quick-search--label {
   display: block;
@@ -366,24 +408,6 @@ input[type=search] {
   justify-content: flex-end;
   width: 40px;
   cursor: pointer;
-}
-
-.header__popular-history-tag > button {
-  border: 1px solid #103a3a;
-  border-radius: 500px;
-  padding: 8px 10px;
-  margin-right: 6px;
-  background: #fff;
-}
-.header__popular-history-tag > button:hover {
-  background-color: #c25b41;
-  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
-}
-.header__popular-history-tag a {
-  padding: 0 10px;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #103a3a;
 }
 
 .slideshow {

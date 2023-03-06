@@ -133,7 +133,7 @@
                         </div>
                 </div>
                 <div class="header__quick-search">
-                        <div class="header__quick-search--form">
+                        <div class="header__quick-search--form" tabIndex="-1">
                             <form action="/search" class="searchform">
                                 <fieldset>
                                     <input type="search" class="search-field" placeholder="Search for anything">
@@ -144,42 +144,18 @@
                             </form>
                         </div>
                         <div class="header__quick-search--result-container"></div>
-                        <!-- <div class="header__quick-search--popular">
+                         <div class="header__quick-search--popular">
                             <span class="header__quick-search--label">POPULAR SEARCHES</span>
                             <scroll-shadow>
-                                <style>
-                                    :host{
-                                        display: inline-block;
-                                        position: relative;
-                                    }
-                                    :host([hidden]){
-                                        display: none;
-                                    }
-                                    s {
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        z-index: 5;
-                                        pointer-events: none;
-                                        background-repeat: no-repeat;
-                                    }
-                                </style>
-                                <slot>
-                                    <div class="header__popular-history-tag"></div>
-                                </slot>
-                                <s style="top: 0px; left:0px; right: 0px; bottom: 0px;"></s>
-                                <div class="header__popular-history-tag">
-                                    <button><a href="#" class="button outline pill small">Our story</a></button>
-                                    <button><a href="#" class="button outline pill small">Careers</a></button>
-                                    <button><a href="#" class="button outline pill small">Press</a></button>
-                                    <button><a href="#" class="button outline pill small">FAQ</a></button>
-                                    <button><a href="#" class="button outline pill small">Find a store</a></button>
+                                <div>
+                                    <a href="#" class="button outline small pill" title="Our Story">Our story</a>
+                                    <a href="#" class="button outline small pill" title="Careers">Careers</a>
+                                    <a href="#" class="button outline small pill" title="Press">Press</a>
+                                    <a href="#" class="button outline small pill" title="FAQ">FAQ</a>
+                                    <a href="#" class="button outline small pill" title="Find a store">Find a store</a>
                                 </div>
                             </scroll-shadow>
-                        </div> -->
-                    </div>
+                        </div>
             </div>
         </div>
         <!-- End of header section -->
