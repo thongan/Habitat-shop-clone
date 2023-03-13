@@ -62,6 +62,34 @@
   max-width: 33.3333%;
 }
 
+.large-2 {
+  flex: 0 0 16.667%;
+  max-width: 16.667%;
+}
+
+input[type=email] {
+  border: 1px solid #dedede;
+  padding: 18px 22px;
+  height: 52px;
+  font-weight: 400;
+  background: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+button {
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  line-height: 1;
+  cursor: auto;
+}
+
 .announce-bar-section {
   position: relative;
   z-index: 60;
@@ -1126,4 +1154,161 @@ img {
 .text-center .button:hover::before {
   transform: translateY(0);
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+}
+
+.background-inner {
+  position: relative;
+  min-width: 1350px;
+  height: 768px;
+  border: 0;
+  padding: 0;
+}
+.background-inner .myVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.background-inner .myVideo .srcVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.background-inner .background-overlay {
+  position: absolute;
+  opacity: 0.4;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+.background-content {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding: 20px 30px;
+  justify-content: space-between;
+  align-items: center;
+  top: 88%;
+  z-index: 10;
+  background-color: #c25b41;
+}
+.background-content .background-text {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 20px 0;
+  flex: 1;
+  letter-spacing: 0.1rem;
+}
+.background-content .button {
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.background-content .button span {
+  color: #fff;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 18px 28px;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+.background-content .button span:hover {
+  color: #c25b41;
+  background-color: #fff;
+  transition: all 0.25s ease-in;
+}
+
+#footer {
+  padding: 70px 0;
+  background: #f6f6f0;
+  font-size: 1.2rem;
+}
+#footer .widget {
+  max-height: 290px;
+}
+#footer .widget .widget-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+}
+#footer .widget .widget-description {
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+#footer .widget .widget-list {
+  list-style: none;
+}
+#footer .widget .widget-item {
+  margin-bottom: 5px;
+}
+#footer .widget .widget-item > .widget-link {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #103a3a;
+}
+#footer .widget .widget-item > .widget-link span:hover {
+  color: #c25b41;
+  transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#footer .widget .widget-item > .widget-icon {
+  font-size: 2.4rem;
+}
+
+.signup-container input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  width: 100%;
+  padding: 20px 40px 20px 0;
+  border-bottom: 1px solid #2b2b2b;
+}
+.signup-container label {
+  font-size: 1.4rem;
+  letter-spacing: 0.02rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.signup-container fieldset {
+  position: relative;
+}
+.signup-container button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  max-height: 52px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.sub-footer {
+  padding-top: 20px;
+}
+.sub-footer p {
+  font-size: 1.3rem;
+  color: #777;
+}
+.sub-footer p a {
+  color: #777;
+  text-decoration: underline;
+}
+.sub-footer p a:hover {
+  color: #c25b41;
 }/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
+"use strict";
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 // Hiện thanh search
@@ -62,7 +64,7 @@ function moveLeft(){
 }
 
 // Get category from Api
-var getCategory = "http://localhost:3000/Category";
+const getCategory = "http://localhost:3000/Category";
 
 function startCollection(){
     getCollection(renderCollection)
