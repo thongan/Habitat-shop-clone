@@ -186,3 +186,12 @@ class myScroll extends HTMLElement {
     }
 }
 customElements.define("scroll-shadow", myScroll);
+// Open cart 
+const cartBtn = $('#cart-drawer-toggle')
+const closeCartBtn= $('.side-cart-close')
+cartBtn.addEventListener('click', () => {
+    $('.cart-drawer').classList.add('active')
+})
+closeCartBtn.addEventListener('click', () => {
+    $('.cart-drawer').classList.remove('active')
+})
