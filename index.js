@@ -64,7 +64,8 @@ function moveLeft(){
 }
 
 // Get category from Api
-const getCategory = "http://localhost:3000/Category";
+const getCategory = "https://api.escuelajs.co/api/v1/products";
+console.log(getCategory)
 
 function startCollection(){
     getCollection(renderCollection)
@@ -83,7 +84,7 @@ function renderCollection(collections){
         <div class="card-slider__inner">
             <a href="#" class="card-slider__link">
                 <div class="card-slider__img">
-                    <img src="${collection.image}" alt="Dining Room" class="">
+                    <img src="${collection.images}" alt="Dining Room" class="">
                 </div>
                 <div class="card-slider__content">
                     <div>
@@ -146,47 +147,8 @@ function plusQty(){
     qtyTxt.value = qty
 }
 
-// Định nghĩa element scroll-shadow cho web.
-class myScroll extends HTMLElement {
-    constructor(){
-        super();
-        const shadow = this.attachShadow({mode:'open'});
-        let style = document.createElement('style'); 
-        let s = document.createElement('s');
-        s.setAttribute("style", "top:0px; left:0px; right: 0px; bottom:0px;")
-        style.textContent = `
-            :host {
-                display: inline-block;
-                position: relative;
-            }
-            :host([hidden]){
-                display: none;
-            }
-            s {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                    z-index: 5;
-                pointer-events: none;
-                background:
-                var(--scroll-shadow-top, radial-gradient(farthest-side at 50% 0%, rgba(0,0,0,.2), rgba(0,0,0,0))) top/100% var(--top),
-                var(--scroll-shadow-bottom, radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0))) bottom/100% var(--bottom),
-                var(--scroll-shadow-left, radial-gradient(farthest-side at 0%, rgba(0,0,0,.2), rgba(0,0,0,0))) left/var(--left) 100%,
-                var(--scroll-shadow-right, radial-gradient(farthest-side at 100%, rgba(0,0,0,.2), rgba(0,0,0,0))) right/var(--right) 100%;
-                background-repeat: no-repeat;
-            }    
-  
-        `
-        let slot = document.createElement('slot');
-        shadow.appendChild(style);
-        shadow.appendChild(slot);
-        shadow.appendChild(s);
-    }
-}
-customElements.define("scroll-shadow", myScroll);
-// Open cart 
+
+//Open cart 
 const cartBtn = $('#cart-drawer-toggle')
 const closeCartBtn= $('.side-cart-close')
 cartBtn.addEventListener('click', () => {
